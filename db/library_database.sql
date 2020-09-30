@@ -11,5 +11,6 @@ CREATE TABLE books (
   title VARCHAR(255),
   publisher VARCHAR(255),
   number_of_pages INT,
+  loan_status BOOLEAN,
   author_id INT REFERENCES authors(id)
 );
