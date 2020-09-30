@@ -4,3 +4,5 @@ class Book:
         self.publisher = publisher
         self.number_of_pages = number_of_pages
         self.author = author
+        self.loan_status = loan_status
+        self.id = id
