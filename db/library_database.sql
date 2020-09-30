@@ -10,7 +10,7 @@ CREATE TABLE books (
   id SERIAL PRIMARY KEY,
   title VARCHAR(255),
   publisher VARCHAR(255),
-  number_of_pages INT,
+  genre VARCHAR(255),
   loan_status BOOLEAN,
   author_id INT REFERENCES authors(id)
 );
