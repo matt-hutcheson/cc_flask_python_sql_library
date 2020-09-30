@@ -5,8 +5,7 @@ from models.book import Book
 import repositories.author_repositories as author_repositories
 
 
-
-
+author_repositories.delete_all()
 
 author1 = Author("Iain M Banks")
 author_repositories.save(author1)

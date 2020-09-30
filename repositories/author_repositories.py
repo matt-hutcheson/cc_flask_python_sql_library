@@ -11,7 +11,7 @@ def save(author):
     if results is not None:
         author.id = results[0]['id']
     return author
-    
+
 
 def select_all():
     authors = []
@@ -25,3 +25,7 @@ def select_all():
     return authors
 
 
+def delete_all():
+    sql = "DELETE FROM authors"
+    run_sql(sql)
+    
